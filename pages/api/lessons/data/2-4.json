@@ -1,0 +1,23 @@
+[
+    {
+        "type": "term",
+        "term": "ACh (acetylchlone)",
+        "definition": "a neurotransmitter that enables muscle action, learning, and memory"
+    },
+    {
+        "type": "diagram_point",
+        "image": "https://www.ninds.nih.gov/sites/default/files/styles/half_width_small/public/2022-04/KYB_Brain_Basics_Brain040522.png?itok=JfIedWtE",
+        "term": "Frontal Lobe",
+        "coordinates": [50, 50]
+    },
+    {
+        "type": "self_graded",
+        "prompt": "Explain the resting potential of a neuron with as many terms as possible.",
+        "answer": "Neurons generate electricity from chemical events. Ions are exchanged so that the fluid outside an axon's membrane has mostly positively charged sodium ions. A resting axon's fluid interior has a mostly negative charge. The axon's surface is selectively permeable - it only allows certain things through its gates. This state is called the resting potential.",
+        "criteria": [
+            ["Describe the positive and negative ions", 2],
+            ["Explain how an axon is selectively permeable", 1],
+            ["Define resting potential", 1]
+        ]
+    }
+]

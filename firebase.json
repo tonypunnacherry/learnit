@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "learn-it",
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
