@@ -15,7 +15,7 @@ const client = createClient({
     accessToken: process.env.CONTENTFUL_ACCESS_KEY
 });
 
-export async function getStaticPaths() {
+export async function getServerSidePaths() {
     const res = await client.getEntries({
         include: 2,
         content_type: "topic",
@@ -28,14 +28,14 @@ export async function getStaticPaths() {
     }
 }
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
     const res = await client.getEntries({
         include: 2,
         content_type: "topic",
         'sys.id': params.module
     });
 
-    const module = res.items[0];
+    const mod = res.items[0];
 
     const res2 = await fetch("http://localhost:3000/api/study/getModule", {
         headers: {
@@ -43,13 +43,13 @@ export async function getStaticProps({ params }) {
             'Content-Type': 'application/json'
         },
         method: "POST",
-        body: JSON.stringify({ module })
+        body: JSON.stringify({ module: mod })
     })
 
     const info = await res2.json();
 
     return {
-        props: { info, module }
+        props: { info, module: mod }
     }
 
 }

@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { createClient } from 'contentful';
 
 import { Button, Accordion, Icon, Segment } from 'semantic-ui-react'
-import AnimateHeight from 'react-animate-height';
 
 const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,

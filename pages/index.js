@@ -33,7 +33,7 @@ export default function Home() {
                 <p><Button color="orange" content='Add Course' icon='plus' labelPosition='left' /></p>
               </Grid.Column>
               <Grid.Column width={6}>
-                <h2>Today's Tasks</h2>
+                <h2>Today&apos;s Tasks</h2>
                 <h2>Daily Mastery Quiz</h2>
                 <p>Come back in $time for your next quiz!</p>
               </Grid.Column>
