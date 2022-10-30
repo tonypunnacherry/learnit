@@ -37,7 +37,7 @@ export async function getServerSideProps({ params }) {
 
     const mod = res.items[0];
 
-    const res2 = await fetch("http://localhost:3000/api/study/getModule", {
+    const res2 = await fetch("https://learnit-web.vercel.app/api/study/getModule", {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
