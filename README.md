@@ -12,4 +12,4 @@ Currently in development stages
 Early; only basic features and architecture is complete
 
 ## Project timeline
-Started - early 2022
+Started - September 2022
