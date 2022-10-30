@@ -13,4 +13,3 @@ Early; only basic features and architecture is complete
 
 ## Project timeline
 Started - early 2022
-Published to Github on Oct. 30, 2022
