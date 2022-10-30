@@ -10,3 +10,6 @@ Currently in development stages
 
 ## Stage of development
 Early; only basic features and architecture is complete
+
+## Project timeline
+Started - early 2022
