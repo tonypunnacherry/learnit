@@ -8,7 +8,7 @@ async function saveScore(myDoc, info, id, correct) {
         await updateDoc(myDoc, { [`quizScores.${id}`]: { first: 0, best: 0, recent: 0, mastery: 0 } });
         await updateDoc(myDoc, { [`quizScores.${id}.first`]: correct });
     }
-    if (correct > info.quizScores[id].best) {
+    if (info.quizScores[id] && correct > info.quizScores[id].best) {
         await updateDoc(myDoc, { [`quizScores.${id}.best`]: correct });
     }
     await updateDoc(myDoc, { [`quizScores.${id}.recent`]: correct });
