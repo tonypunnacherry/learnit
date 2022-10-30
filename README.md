@@ -13,3 +13,8 @@ Early; only basic features and architecture is complete
 
 ## Project timeline
 Started - September 2022
+
+## How to run project
+1. Clone repository onto your device
+2. `npm build` then `npm start`
+3. Open localhost:3000 to view the page
