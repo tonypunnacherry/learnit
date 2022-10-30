@@ -1,5 +1,7 @@
 # Learnit Application
 Currently in development stages
+LINK TO PRODUCTION: https://learnit-web.vercel.app/ (may have some bugs)
+
 ## Libraries used
 1. Semantic-UI React for design
 2. Next.js (React) for SSR
