@@ -44,14 +44,12 @@ export default function Library({ courses }) {
           <p>Find the material you need to study here!</p>
           <h2>My Courses</h2>
           <p>You are not enrolled in any course.</p>
-          <Suspense fallback={`Loading...`}>
-            {courses.map(entry => (
-              <>
-                <h2 key={entry[1][0].fields.subject.sys.id}>{entry[0]}</h2>
-                <CourseCards courses={entry[1]} />
-              </>
-            ))}
-          </Suspense>
+          {courses.map(entry => (
+            <>
+              <h2 key={entry[1][0].fields.subject.sys.id}>{entry[0]}</h2>
+              <CourseCards courses={entry[1]} />
+            </>
+          ))}
       </div>
     </>
   )
